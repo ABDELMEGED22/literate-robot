@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="جيدو ديجيتال مول - أكبر متجر إلكتروني للتقسيط الذكي في مصر مع جميع شركات التمويل">
+    <meta name="keywords" content="تقسيط, تسوق, مصر, فاليو, تمارا, تابي, شهري, حالا, متجر إلكتروني, تسويق">
+    <title>جيدو ديجيتال مول - التقسيط الذكي في مصر</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p>جاري التحميل...</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="top-banner">
+            عرض خاص: خصومات تصل إلى 50% على جميع المنتجات!
+        </div>
+
+        <header class="header">
+            <div class="header-content">
+                <h1>جيدو ديجيتال مول</h1>
+                <p class="subtitle">التقسيط الذكي في مصر</p>
+
+                <div class="features">
+                    <div class="feature-item"><i class="fas fa-credit-card"></i> تقسيط مريح</div>
+                    <div class="feature-item"><i class="fas fa-shopping-cart"></i> تشكيلة واسعة</div>
+                    <div class="feature-item"><i class="fas fa-shield-alt"></i> تسوق آمن</div>
+                    <div class="feature-item"><i class="fas fa-truck"></i> توصيل سريع</div>
+                </div>
+
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="ابحث عن منتج...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <div class="flash-sale">
+            <h2 class="flash-title">عرض خاطف!</h2>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">أيام</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">ساعات</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">دقائق</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">ثواني</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-tab="stores">المتاجر</button>
+            <button class="nav-tab" data-tab="financing">التمويل</button>
+            <button class="nav-tab" data-tab="products">المنتجات</button>
+            <button class="nav-tab" data-tab="categories">التصنيفات</button>
+        </div>
+
+        <div class="tab-content" id="stores">
+            <h2 class="section-title">المتاجر الشريكة</h2>
+            <div class="stores-grid">
+                <div class="store-card">
+                    <div class="store-logo">
+                        <h3>متجر إلكتروني 1</h3>
+                        <span class="store-badge electronics">إلكترونيات</span>
+                    </div>
+                    <p>وصف قصير للمتجر.</p>
+                    <a href="#" class="btn">تسوق الآن</a>
+                </div>
+                <div class="store-card">
+                    <div class="store-logo">
+                        <h3>متجر إلكتروني 2</h3>
+                        <span class="store-badge fashion">أزياء</span>
+                    </div>
+                    <p>وصف قصير للمتجر.</p>
+                    <a href="#" class="btn">تسوق الآن</a>
+                </div>
+                <!-- More Store Cards -->
+            </div>
+        </div>
+
+        <div class="tab-content" id="financing">
+            <h2 class="section-title">شركات التمويل</h2>
+            <div class="financing-grid">
+                <div class="financing-card">
+                    <div class="financing-logo">
+                        <h3>شركة تمويل 1</h3>
+                        <span class="financing-badge popular">شائعة</span>
+                    </div>
+                    <p>شروط التمويل.</p>
+                    <a href="#" class="btn installment-btn">تقدم بطلب</a>
+                </div>
+                <div class="financing-card">
+                    <div class="financing-logo">
+                        <h3>شركة تمويل 2</h3>
+                        <span class="financing-badge new">جديدة</span>
+                    </div>
+                    <p>شروط التمويل.</p>
+                    <a href="#" class="btn installment-btn">تقدم بطلب</a>
+                </div>
+                <!-- More Financing Cards -->
+            </div>
+        </div>
+
+        <div class="tab-content" id="products">
+            <h2 class="section-title">المنتجات المميزة</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">اسم المنتج</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i> 4.5
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">1999.99</span>
+                            <span class="old-price">2499.99</span>
+                            <span class="discount">خصم 20%</span>
+                        </div>
+                        <a href="#" class="btn">أضف إلى السلة</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">اسم المنتج</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i> 4.2
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">999.99</span>
+                            <span class="old-price">1299.99</span>
+                            <span class="discount">خصم 23%</span>
+                        </div>
+                        <a href="#" class="btn">أضف إلى السلة</a>
+                    </div>
+                </div>
+                <!-- More Product Cards -->
+            </div>
+        </div>
+
+        <div class="tab-content" id="categories">
+            <h2 class="section-title">التصنيفات</h2>
+            <div class="categories-grid">
+                <div class="category-item">
+                    <i class="fas fa-laptop"></i>
+                    <h3>إلكترونيات</h3>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>أزياء</h3>
+                </div>
+                <!-- More Category Items -->
+            </div>
+        </div>
+
+        <div class="payment-methods">
+            <span class="payment-tag valu">Valu</span>
+            <span class="payment-tag shahry">Shahry</span>
+            <span class="payment-tag tamara">Tamara</span>
+            <!-- More Payment Tags -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
